@@ -1,0 +1,24 @@
+---
+
+const {post} = Astro.props;
+
+function formatdate (date:Date) {
+	return new Date(date).toLocaleDateString('en-US', {timeZone: "UTC",})
+}
+
+---
+
+
+<div id="postCard">
+    <img id="postImg" src={post.frontmatter.image}>
+    <div id="postInfo">
+        <a href={post.url}><h2>{post.frontmatter.title}</h2></a>
+        <p>{post.frontmatter.description}</p>
+        <div id="postData">
+            <p>{formatdate(post.frontmatter.date)}</p>
+            <p>by {post.frontmatter.author}</p>
+            <p><a id="readMore" href={post.url}>Read more..</a></p>
+        </div>
+    </div> 
+</div>
+

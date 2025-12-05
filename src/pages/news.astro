@@ -1,0 +1,18 @@
+---
+import MainLayout from "./layouts/MainLayout.astro";
+import PostCard from "./components/PostCard.astro";
+
+const allPost = await Astro.glob("./blog/*.md");
+
+---
+
+<MainLayout title="News">
+	<div id="newContent">
+		<div id="headerNews">
+			<h1>News</h1>
+			<p>Find out the latest news about our beloved Raul Alejandro.</p>
+		</div>
+		{allPost.map((post) => <PostCard {post}/>)}
+	</div>
+	
+</MainLayout>

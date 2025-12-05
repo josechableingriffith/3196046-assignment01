@@ -1,0 +1,17 @@
+---
+
+interface prop {
+	title?: string;
+}
+
+const { title = "Jose Chable"} = Astro.props as prop;
+---
+
+<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title + " - 3196046 - Assignment 01"}</title>
+		<link rel="stylesheet" href="/src/pages/css/global.css">
+</head>

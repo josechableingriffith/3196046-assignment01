@@ -1,0 +1,25 @@
+---
+import MainHead from "../components/MainHead.astro"
+import MainHeader from "../components/MainHeader.astro"
+import MainFooter from "../components/MainFooter.astro"
+import SocialHeader from "../components/SocialHeader.astro"
+import LogoHeader from "../components/LogoHeader.astro"
+
+const { title } = Astro.props;
+
+---
+ <!DOCTYPE html>
+ <html lang="en">
+ <MainHead title = {title} />
+ <body>
+	<MainHeader />
+	<SocialHeader />
+	<LogoHeader />
+	<main id="content">
+		<slot>
+			text
+		</slot>
+	</main>
+	<MainFooter />
+ </body>
+ </html>

@@ -1,0 +1,83 @@
+---
+import MainLayout from "./layouts/MainLayout.astro";
+---
+
+<MainLayout title="Playlist">
+	<div id="playlistContent">
+		<div id="ownPlaylist">
+			<h1>Make your own playlist</h1>
+			<div id="form">
+				<div id="addBlock">
+					<select id="addSong">
+					<option value="" disabled selected>Add to playlist</option>
+					<option value="Carita Linda">Carita Linda</option>
+					<option value="Caribeño">Caribeño</option>
+					<option value="GuabanSexxx">GuabanSexxx</option>
+					<option value="Buenos Terminos">Buenos Terminos</option>
+					<option value="Silencio">Silencio</option>
+					<option value="El Cuc0.0">El Cuc0.0</option>
+					<option value="Contrabando">Contrabando</option>
+					<option value="Nostalgia de otoño">Nostalgia de otoño</option>
+					<option value="Naufragos">Naufragos</option>
+					<option value="Besito en la frente">Besito en la frente</option>
+					<option value="Santa">Santa</option>
+					<option value="Callejon de los secretos">Callejon de los secretos</option>
+					<option value="Falsedad">Falsedad</option>
+					<option value="Mirando al cielo">Mirando al cielo</option>
+					</select>
+					<button id="add" class="btn">Add Song</button>
+				</div>
+				<button id="mix" class="btn">Mix your playlist</button>			
+			</div>
+			<ul id="playlist"></ul>
+		</div>
+		<div id="spotify">
+			<h2>Listen to the entire album</h2>
+			<iframe src="https://open.spotify.com/embed/album/752aUI4EPYOGrNuo74pmCR?utm_source=generator&theme=0" loading="lazy"></iframe>
+		</div>
+	</div>
+	<script>
+
+		const arraySongs = [];
+		
+		function showSongs() {
+    		const listSongs = document.getElementById("playlist");
+			
+			function songTime() {
+				const seconds = Math.floor(Math.random() * 60); 
+				return `3:${seconds.toString().padStart(2, "0")}`;
+			}
+    		
+			listSongs.innerHTML = arraySongs.map(song => {
+				const time = songTime();
+				return `
+					<li>
+						<div class="song">
+							<div id="songCover"></div>
+							<div id="songInfo">
+								<h3>${song}</h3>
+								<p>Rauw Alejandro</p>
+							</div>
+							<div id="songTime">
+								<p>${time}</p>
+								<p>min</p>
+							</div>
+						</div>
+					</li>`;
+				}
+			).join("");
+}
+
+		document.getElementById("add")?.addEventListener("click", () => {
+			const newSong = document.getElementById("addSong").value.trim();
+			newSong && (arraySongs.push(newSong),
+			showSongs(),
+			document.getElementById("addSong").value = ""
+		)});
+		document.getElementById("mix").addEventListener("click", () => {
+    		arraySongs.sort( () => Math.random() - .5),
+   			showSongs()
+		});
+		
+	</script>
+</MainLayout>

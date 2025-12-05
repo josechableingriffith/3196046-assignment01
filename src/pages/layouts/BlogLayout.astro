@@ -1,0 +1,26 @@
+---
+import MainLayout from "./MainLayout.astro";
+
+const {frontmatter}	 = Astro.props;
+const { title, date, author, category, image} = frontmatter;
+
+function formatdate (date:Date) {
+	return new Date(date).toLocaleDateString('en-US', {timeZone: "UTC",})
+}
+
+---
+<MainLayout title={title}>
+	<header id="postHeader">
+		<h1 id="title">{title}</h1>
+		<p>By <span>{author}</span></p>
+		<p>{formatdate(date)}</p>
+	</header>
+	<div id="postBody">
+		<div id="postContent">
+			<slot />
+		</div>
+		<div id="postSidebar">
+
+		</div>
+	</div>
+</MainLayout>

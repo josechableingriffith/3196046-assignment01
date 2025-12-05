@@ -1,0 +1,506 @@
+/* ----- Main Layout ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    background-color: #000000;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items : center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: larger;
+}
+
+#mainMenu {
+    height: 100vh;
+    width: 13vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainMenu nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#mainMenu nav ul li {
+    list-style: none;
+    margin: 3rem 0;
+}
+
+#mainMenu nav ul li a {
+    color: #fff;
+    font-size: larger;
+    text-decoration: none;
+    font-style: italic;
+    transition-duration: 300ms;
+}
+
+#mainMenu nav ul li a:hover {
+    color: goldenrod;
+    transition-duration: 300ms;
+}
+
+#socialHeader {
+    height: 100vh;
+    width: 13vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#socialHeader nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#socialHeader nav ul li {
+    list-style: none;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#socialHeader img {
+    width: 20px;
+    transition-duration: 200ms;
+}
+
+#socialHeader nav ul li img:hover {
+   width: 17px;  
+   transition-duration: 200ms;
+}
+
+#logoHeader {
+   height: 10vh;
+   width: 70vw;
+   display: flex;
+}
+
+#logo  {
+    height: 50%;
+    margin: auto;
+}
+
+#content {
+    height: auto;
+    width: 70vw;
+}
+
+#mainFooter {
+    width: 70vw;
+    height: 5vh;
+}
+
+#mainFooter div {
+    display: flex;
+    height: 100%    ;
+    justify-content: space-evenly;
+}
+
+#mainFooter p {
+    font-size: small;
+     color: #adadad;
+}
+
+/* ----- Index ----- */
+
+#hero {
+    height: 85vh;
+    max-height: 85vh;
+}
+
+#imagehero {
+    height: 25%; 
+}
+
+#album {
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(3px 4px 5px #000);
+}
+
+#videoHero {
+    margin-top: -9vh;
+    height: 85%;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+/* ----- Playlist ----- */
+
+#playlistContent {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#ownPlaylist {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+#ownPlaylist h1 {
+    margin-bottom: 2rem;
+}
+
+#ownPlaylist ul {
+    padding-inline-start: 0;
+}
+
+#playlist li {
+    list-style: none;
+}
+
+#form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+
+#addBlock {
+    width: 100%;
+}
+
+#addBlock select {
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    text-align: center;
+    height: 5vh;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #fff;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 10px;transition-duration: 300ms;
+}
+
+.btn:hover {
+    background-color: #1f1f1f;
+    color: #fff;
+    transition-duration: 300ms;
+}
+
+#add {
+    color: #fff;
+    background-color: rgb(100, 100, 100)
+}
+
+.song {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 3rem 0;
+    background-color: #1f1f1f;
+    justify-content: space-between;
+}
+
+#songCover {
+    width: 10vh;
+    height: 10vh;
+    background-image: url(../../../public/rauw-album.jpeg);
+    background-size: cover;
+   
+}
+
+#songCover img {
+    height: 100%;
+}
+
+#songInfo {
+    text-align: center;
+    padding-left: 2rem;
+    align-content: center;
+    margin-block: 0;
+}
+
+#songInfo h3 {
+    margin-block: 0;
+    font-weight: 500;
+}
+
+#songInfo p {
+    margin-block: 0;
+    padding-top: 0.5rem;
+    font-size: small;
+}
+
+#songTime  {
+    display: block;
+    align-content: center;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+#songTime p {
+    margin-block: 0;
+}
+
+#spotify  {
+    width: 80%;
+    text-align: center;
+}
+
+#spotify iframe {
+    height: 102vh;
+}
+
+/* ----- About ----- */
+
+#aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh; 
+}
+
+.boxInfo {
+    background-color: #f8ebdb;
+    color: #000;
+    padding: 5vh;
+    height: auto;    
+    border-radius: 10px;
+    display: flex;
+}
+
+#heroInfo {
+    text-align: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#heroInfo h1 {
+    font-style: italic;
+}
+
+#info1 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+#info2 {
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+#info3 {
+    padding-top: 2rem;
+    margin: 0;
+    border-top: 2px solid goldenrod;
+}
+
+#info4 {
+    font-size: smaller;
+}
+
+#heroImg {
+    height: 75vh;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+}
+
+#heroImg img {
+    margin: auto;
+    max-width: 100%;
+}
+
+#infoImgs {
+    height: 80vh;
+    width: 50%;
+}
+
+#infoImgs div{
+    display: flex;
+    height: 50%;
+}
+
+#infoImgs img {
+    height: 100%;
+    width: auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .2509803922);
+}
+
+#img1 {
+    transform: rotate(-4.39deg);
+}
+
+#img2 {
+    justify-content: right;
+    padding-right: 4rem;
+    transform: rotate(4.39deg);
+}
+
+#moreInfo {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    font-size: 2vh;
+}
+
+#moreInfo h2 {
+    font-weight: 400;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+/* ----- News -----*/
+
+#headerNews {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+#headerNews h1 {
+    font-size: 5vh;
+    font-style: italic;
+}
+
+#headerNews p {
+    font-size: 3vh;
+}
+
+/* ----- Tour -----*/
+
+#headerTour {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+#headerTour h1 {
+    font-size: 5vh;
+}
+
+#headerTour p {
+    font-size: 3vh;
+}
+
+#datesTour ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.dateTour {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    transition-duration: 350ms;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+
+.dateTour:hover {
+    background-color: #f8ebdb;
+    transition-duration: 350ms;
+    color: #000;
+    .button {
+        background-color: #000;
+        transition-duration: 350ms;
+        color: #fff;
+    }
+}
+
+.dateTour p {
+    margin: 0;
+}
+
+.place .sub {
+    margin-top: 5px;
+    font-size: smaller;
+    font-style: italic;
+}
+
+.place .main {
+    text-transform: uppercase;
+}
+
+.button {
+    background-color: #f8ebdb;
+    padding: 1rem 2rem;
+    height: 3vh;
+    border-radius: 10vh;
+    text-decoration: none;
+    color: #000;
+    transition-duration: 350ms;
+}
+
+/* ----- Post Card -----*/
+
+#postCard {
+    background-color: #f8ebdb;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    margin-bottom: 5vh;
+    color: #000;
+}
+
+#postInfo a {
+    color: #000;
+    text-decoration: none;
+}
+
+#postImg {
+    width: 30%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#postInfo {
+    padding: 2rem;
+    width: 70%;
+    height: 100%;
+}
+
+#postInfo h2 {
+    margin: 0;
+}
+
+#postData {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+#readMore {
+    text-decoration: none;
+    color: goldenrod;
+    filter: drop-shadow(0px 0px .2px #000000d4);
+}
+
+#readMore:hover {
+    text-decoration: underline;
+}
+
+/* ----- Post Content -----*/
+
+#postContent img {
+    width: 100%;
+    height: auto;
+}
