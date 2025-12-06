@@ -1,6 +1,9 @@
 ---
 import MainLayout from "./layouts/MainLayout.astro";
 import PostCard from "./components/PostCard.astro";
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts');
 
 const allPost = await Astro.glob("./blog/*.md");
 
