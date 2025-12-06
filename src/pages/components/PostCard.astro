@@ -2,6 +2,11 @@
 
 const {post} = Astro.props;
 
+if (!post) {
+  console.warn("PostCard missing `post` prop");
+}
+const frontmatter = post?.frontmatter ?? {};
+
 function formatdate (date:Date) {
 	return new Date(date).toLocaleDateString('en-US', {timeZone: "UTC",})
 }
