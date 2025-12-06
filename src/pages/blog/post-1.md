@@ -4,7 +4,7 @@ title: Rauw Alejandro takes Europe by storm with his "Cosa Nuestra World Tour"
 date: 2025-11-19
 author: Jose Chable
 category: news
-image: ../../../public/posts_images/post1.webp
+image: posts_images/post1.webp
 description: Rauw Alejandro has achieved one of the greatest milestones of his career with the impressive reception of his Cosa Nuestra World Tour in Europe.
 
 ---
