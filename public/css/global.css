@@ -220,7 +220,7 @@ iframe {
 #songCover {
     width: 10vh;
     height: 10vh;
-    background-image: url(../../../public/rauw-album.jpeg);
+    background-image: url(/img/rauw-album.jpeg);
     background-size: cover;
    
 }
