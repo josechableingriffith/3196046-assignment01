@@ -4,12 +4,12 @@ title: Rauw Alejandro takes Europe by storm with his "Cosa Nuestra World Tour"
 date: 2025-11-19
 author: Jose Chable
 category: news
-image: img/posts_images/post1.webp
+image: /img/posts_images/post1.webp
 description: Rauw Alejandro has achieved one of the greatest milestones of his career with the impressive reception of his Cosa Nuestra World Tour in Europe.
 
 ---
 
-![alt text](img/posts_images/post1.webp)
+![alt text](/img/posts_images/post1.webp)
 
 Rauw Alejandro has achieved one of the greatest milestones of his career with the impressive reception of his Cosa Nuestra World Tour in Europe. The tour has visited key cities such as London, Paris, Berlin, Amsterdam, Lisbon and Barcelona, where every concert has been reported as completely sold out. The response from European audiences has been extraordinary, consolidating the artist as one of the global leaders in Latin urban pop.
 
