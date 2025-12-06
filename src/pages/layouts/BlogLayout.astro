@@ -1,8 +1,8 @@
 ---
 import MainLayout from "./MainLayout.astro";
 
-const {frontmatter}	 = Astro.props;
-const { title, date, author, category, image} = frontmatter;
+const { frontmatter } = Astro.props ?? {};
+const { title, date, author, category, image } = frontmatter ?? {};
 
 function formatdate (date:Date) {
 	return new Date(date).toLocaleDateString('en-US', {timeZone: "UTC",})

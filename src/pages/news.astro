@@ -15,7 +15,9 @@ const allPost = await Astro.glob("./blog/*.md");
 			<h1>News</h1>
 			<p>Find out the latest news about our beloved Raul Alejandro.</p>
 		</div>
-		{allPost.map(post => <PostCard post={post}/>)}
+		{allPost?.length
+      ? allPost.map(post => <PostCard post={post} />)
+      : <p>No posts available</p>}
 	</div>
 	
 </MainLayout>
