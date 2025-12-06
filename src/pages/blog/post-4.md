@@ -9,7 +9,7 @@ description: Behind every Rauw Alejandro show lies a level of physical demands c
 
 ---
 
-![alt text](../../../public/posts_images/post4.webp)
+![alt text](/img/posts_images/post4.webp)
 
 Behind every Rauw Alejandro show lies a level of physical demands comparable to that of a professional athlete. To deliver performances that combine singing, intense dancing and acrobatic movements, the artist maintains a rigorous training routine that has become an essential part of his identity as a performer.
 

@@ -9,7 +9,7 @@ description: One of the most talked-about moments of the year occurred during a 
 
 ---
 
-![alt text](../../../public/posts_images/post4.webp)
+![alt text](/img/posts_images/post4.webp)
 
 One of the most talked-about moments of the year occurred during a Rauw Alejandro concert at the Intuit Dome, when the artist experienced an unexpected wardrobe malfunction: his trousers ripped during the choreography. Far from becoming a problem, the incident ended up going viral, showcasing the singer's professionalism and charisma.
 

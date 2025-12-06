@@ -9,7 +9,7 @@ description: In 2025, Rauw Alejandro will receive one of the most important awar
 
 ---
 
-![alt text](../../../public/posts_images/post3.jpg)
+![alt text](/img/posts_images/post3.jpg)
 
 In 2025, Rauw Alejandro will receive one of the most important awards of his career: the Hispanic Heritage Award in the Vision category. This prestigious award celebrates leaders and artists who positively impact the Hispanic community and contribute to expanding culture internationally. Rauw's selection reflects the creative and transformative reach of his music.
 

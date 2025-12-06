@@ -9,7 +9,7 @@ description: The Mexican public has once again demonstrated its enormous affecti
 
 ---
 
-![alt text](../../../public/posts_images/post2.webp)
+![alt text](/img/posts_images/post2.webp)
 
 The Mexican public has once again demonstrated its enormous affection for Rauw Alejandro. After quickly selling out the initial dates of the Cosa Nuestra World Tour in Monterrey, Guadalajara, and Mexico City, the artist announced new additional dates for November 2025, significantly expanding his presence in the country.
 
