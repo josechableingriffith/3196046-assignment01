@@ -14,16 +14,19 @@ function formatdate (date:Date) {
 ---
 
 
-<div id="postCard">
-    <img id="postImg" src={post.frontmatter.image}>
+{post ? (
+  <div id="postCard">
+    <img id="postImg" src={post.frontmatter?.image ?? '/default.jpg'} alt={post.frontmatter?.title ?? 'Post image'}>
     <div id="postInfo">
-        <a href={post.url}><h2>{post.frontmatter.title}</h2></a>
-        <p>{post.frontmatter.description}</p>
-        <div id="postData">
-            <p>{formatdate(post.frontmatter.date)}</p>
-            <p>by {post.frontmatter.author}</p>
-            <p><a id="readMore" href={post.url}>Read more..</a></p>
-        </div>
-    </div> 
-</div>
-
+      <a href={post.url}><h2>{post.frontmatter?.title ?? 'Untitled'}</h2></a>
+      <p>{post.frontmatter?.description ?? 'No description available'}</p>
+      <div id="postData">
+        <p>{formatdate(post.frontmatter?.date)}</p>
+        <p>by {post.frontmatter?.author ?? 'Unknown'}</p>
+        <p><a id="readMore" href={post.url}>Read more..</a></p>
+      </div>
+    </div>
+  </div>
+) : (
+  <p>Error: post data missing</p>
+)}
