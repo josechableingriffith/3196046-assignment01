@@ -4,7 +4,7 @@ title: "More dates in Mexico: Rauw Alejandro extends his tour due to high demand
 date: 2025-11-19
 author: Jose Chable
 category: news
-image: ../../../public/posts_images/post2.webp
+image: /img/posts_images/post2.webp
 description: The Mexican public has once again demonstrated its enormous affection for Rauw Alejandro.
 
 ---

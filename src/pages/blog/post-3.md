@@ -4,7 +4,7 @@ title: "Rauw Alejandro to be honoured with the 2025 Hispanic Heritage Award."
 date: 2025-11-19
 author: Jose Chable
 category: news
-image: ../../../public/posts_images/post3.jpg
+image: /img/posts_images/post3.jpg
 description: In 2025, Rauw Alejandro will receive one of the most important awards of his career - the Hispanic Heritage Award in the Vision category.
 
 ---

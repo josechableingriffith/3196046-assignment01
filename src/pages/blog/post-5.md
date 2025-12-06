@@ -4,7 +4,7 @@ title: "The wardrobe malfunction that made Rauw even more beloved by his fans."
 date: 2025-11-19
 author: Jose Chable
 category: news
-image: ../../../public/posts_images/post5.jpg
+image: /img/posts_images/post5.jpg
 description: One of the most talked-about moments of the year occurred during a Rauw Alejandro concert at the Intuit Dome, when the artist experienced an unexpected wardrobe malfunction his trousers ripped during the choreography.
 
 ---

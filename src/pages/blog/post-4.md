@@ -4,7 +4,7 @@ title: "The physical discipline behind Rauw Alejandro's stage success."
 date: 2025-11-19
 author: Jose Chable
 category: news
-image: ../../../public/posts_images/post4.webp
+image: /img/posts_images/post4.webp
 description: Behind every Rauw Alejandro show lies a level of physical demands comparable to that of a professional athlete.
 
 ---
